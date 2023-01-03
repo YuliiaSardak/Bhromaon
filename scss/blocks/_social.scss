@@ -1,0 +1,8 @@
+svg > path {
+    fill: white;
+    cursor: pointer;
+
+    &:hover {
+        fill: $color-blue;
+    }
+}

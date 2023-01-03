@@ -1,0 +1,30 @@
+.footer {
+    height: 268px;
+    background-color: $color-black-default;
+    text-align: center;
+
+    &__block {
+        &-title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.1em;
+            padding-top: 80px;
+        }
+
+        &-pretitle {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2em;
+            margin-top: 8px;
+        }
+    }
+
+    &__social {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        gap: 32px;
+    }
+}

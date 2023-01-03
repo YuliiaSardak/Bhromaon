@@ -1,0 +1,27 @@
+.header__banner-form {
+    width: 647px;
+    margin:  0 auto;
+
+    @media screen and (max-width:$mobile) {
+        width: 540px;
+    }
+  
+    &-input {
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 60px;
+        background: $color-text-white;
+        padding-left: 36px;
+
+        &::placeholder {
+            font-weight: 400;
+            font-family: $main-font;
+            color: $color-input-grey;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2em;
+        }
+    }
+}
+

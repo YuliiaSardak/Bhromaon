@@ -1,0 +1,84 @@
+.benefits__block {
+    display: flex;
+    gap: 121px;
+
+    @media screen and (max-width:$desktop-small){
+        gap: 24px;
+
+    @media screen and (max-width:$tablet-start){
+        flex-direction: column-reverse;
+        gap: 32px;
+        }
+    @media screen and (max-width:$mobile) {
+        gap: 37px;
+        }
+    }
+
+    &-text {
+        max-width: 558px;
+        height: 324px;
+
+        @media screen and (max-width:$tablet-start){
+            text-align: center ;
+            max-width: 720px;
+        }
+
+        &-title {
+            font-family: $additive-font;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 40px;
+            padding-top: 190px;
+
+            @media screen and (max-width:$tablet-start){
+                padding-top: 0;
+            }
+        }
+        
+        &-description {
+            font-weight: 300;
+            font-size: $default-font-size;
+            line-height: 28px;
+            letter-spacing: 0.1em;
+            margin-top: 24px;
+            margin-bottom: 52px;
+
+            @media screen and (max-width:$tablet-start){
+                margin-bottom: 44px;
+            }
+        }
+    }
+    &-images {
+        margin-top: 124px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 461px;
+
+        @media screen and (max-width:$desktop-small){
+            width: 386px;;
+        }
+
+        @media screen and (max-width:$tablet-start){
+            flex-direction: row;
+            margin-top: 60px;
+            gap: 24px;
+        }
+
+        &-house {
+            width: 350px;
+            @media screen and (max-width:$mobile) {
+                width: 258px;
+                height: 162px;
+            }
+        }
+        
+        &-mountains {
+            margin-left: auto;
+            @media screen and (max-width:$mobile) {
+                width: 258px;
+                height: 162px;
+            }
+        }
+    }
+}
