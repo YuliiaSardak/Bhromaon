@@ -11,6 +11,10 @@
         height: 308px;
         object-fit: cover;
 
+        @media screen and (min-width:$desktop-big){
+            width: 440px;
+            height: 280px;
+        }
         @media screen and (max-width:$desktop-small){
             object-fit: cover;
             width: 320px;
@@ -32,6 +36,10 @@
         background-color: $color-brown;
         padding: 48px 60px;
         max-width: 760px;
+
+        @media screen and (min-width:$desktop-big){
+            max-width: 885px;
+        }
 
         &-title {
             font-weight: 400;

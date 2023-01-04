@@ -75,6 +75,11 @@ body {
   max-width: 1140px;
   margin: 0 auto;
 }
+@media screen and (min-width: 1920px) {
+  .wrapper {
+    max-width: 1320px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .wrapper {
     max-width: 960px;
@@ -92,16 +97,22 @@ body {
 }
 
 .header__banner {
-  background-image: url(../../image/header_banner.jpg);
+  background-image: url(../image/header_banner.jpg);
   height: 862px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
 }
+@media screen and (min-width: 1920px) {
+  .header__banner {
+    background-image: url("../image/HeaderBackground_1920.png");
+    min-height: 862px;
+  }
+}
 @media screen and (max-width: 768px) {
   .header__banner {
-    background-image: url("../../image/HeaderBackground_tablet.jpg");
+    background-image: url("../image/HeaderBackground_tablet.jpg");
     min-height: 862px;
   }
 }
@@ -110,7 +121,7 @@ body {
   font-size: 48px;
   line-height: 52px;
   text-align: center;
-  margin-top: 295px;
+  padding-top: 295px;
 }
 .header__banner-pretitle {
   font-weight: 400;
@@ -129,52 +140,84 @@ body {
 }
 
 .benefits__banner {
-  background-image: url(../../image/benefits_banner.jpg);
+  background-image: url(../image/benefits_banner.jpg);
   height: 704px;
 }
 @media screen and (max-width: 768px) {
   .benefits__banner {
-    background-image: url("../../image/benefits_banner_tanblet.jpg");
+    background-image: url("../image/benefits_banner_tanblet.jpg");
     height: 659px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .benefits__banner {
+    height: 630px;
   }
 }
 
 .spain_house__banner {
-  background-image: url("../../image/spain_house__banner.png");
+  background-image: url("../image/spain_house__banner.png");
   height: 712px;
   padding-top: 220px;
 }
 @media screen and (max-width: 768px) {
   .spain_house__banner {
-    background-image: url("../../image/spain_house__banner_tablet.png");
+    background-image: url("../image/spain_house__banner_tablet.png");
     height: 588px;
     padding-top: 120px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .spain_house__banner {
+    height: 615px;
   }
 }
 
 .spain_mountains__banner {
-  background-image: url("../../image/spain_mountains_banner.png");
+  background-image: url("../image/spain_mountains_banner.png");
   height: 712px;
   padding-top: 220px;
 }
+@media screen and (min-width: 1920px) {
+  .spain_mountains__banner {
+    padding-top: 192px;
+    height: 660px;
+  }
+}
 @media screen and (max-width: 768px) {
   .spain_mountains__banner {
-    background-image: url("../../image/spain_mountains_banner_tablet.jpg");
+    background-image: url("../image/spain_house__banner_tablet.png");
     height: 588px;
     padding-top: 120px;
   }
 }
+@media screen and (max-width: 576px) {
+  .spain_mountains__banner {
+    height: 620px;
+  }
+}
 
 .testimonials__banner {
-  background-image: url("../../image/testimonials_banner.jpg");
-  height: 736px;
+  background-image: url("../image/testimonials_banner.jpg");
+  height: 705px;
   padding-top: 120px;
+}
+@media screen and (min-width: 1920px) {
+  .testimonials__banner {
+    padding-top: 115px;
+    height: 680px;
+  }
 }
 @media screen and (max-width: 768px) {
   .testimonials__banner {
-    background-image: url("../../image/testimonials_banner_tablet.jpg");
+    background-image: url("../image/testimonials_banner_tablet.jpg");
     height: 924px;
     padding-top: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .testimonials__banner {
+    height: 975px;
   }
 }
 .testimonials__banner-title {
@@ -223,7 +266,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .header__nav {
-    padding-top: 32px;
+    padding-top: 25px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -263,9 +306,14 @@ svg > path:hover {
   display: flex;
   gap: 121px;
 }
+@media screen and (min-width: 1920px) {
+  .benefits__block {
+    gap: 136px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .benefits__block {
-    gap: 24px;
+    gap: 16px;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 768px) {
@@ -282,6 +330,11 @@ svg > path:hover {
 .benefits__block-text {
   max-width: 558px;
   height: 324px;
+}
+@media screen and (min-width: 1920px) {
+  .benefits__block-text {
+    max-width: 648px;
+  }
 }
 @media screen and (max-width: 768px) {
   .benefits__block-text {
@@ -307,11 +360,16 @@ svg > path:hover {
   line-height: 28px;
   letter-spacing: 0.1em;
   margin-top: 24px;
-  margin-bottom: 52px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 768px) {
   .benefits__block-text-description {
-    margin-bottom: 44px;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .benefits__block-text-description {
+    margin-top: 20px;
   }
 }
 .benefits__block-images {
@@ -330,11 +388,22 @@ svg > path:hover {
   .benefits__block-images {
     flex-direction: row;
     margin-top: 60px;
-    gap: 24px;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 576px) {
+  .benefits__block-images {
+    gap: 25px;
   }
 }
 .benefits__block-images-house {
   width: 350px;
+}
+@media screen and (min-width: 1920px) {
+  .benefits__block-images-house {
+    width: 350px;
+    height: 220px;
+  }
 }
 @media screen and (max-width: 576px) {
   .benefits__block-images-house {
@@ -344,6 +413,13 @@ svg > path:hover {
 }
 .benefits__block-images-mountains {
   margin-left: auto;
+}
+@media screen and (min-width: 1920px) {
+  .benefits__block-images-mountains {
+    width: 350px;
+    height: 220px;
+    margin-left: 75px;
+  }
 }
 @media screen and (max-width: 576px) {
   .benefits__block-images-mountains {
@@ -363,10 +439,23 @@ svg > path:hover {
 }
 .steps__line {
   position: relative;
-  top: 56px;
-  left: 380px;
+  top: 75px;
+  left: 300px;
   overflow: hidden;
   height: 55px;
+  width: 754px;
+  display: inline-block;
+}
+@media screen and (min-width: 1920px) {
+  .steps__line {
+    left: 579px;
+    top: 64px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .steps__line {
+    left: 335px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .steps__line {
@@ -384,16 +473,11 @@ svg > path:hover {
   display: flex;
   justify-content: space-around;
 }
-@media screen and (max-width: 1024px) {
-  .steps__block {
-    justify-content: space-between;
-  }
-}
 @media screen and (max-width: 768px) {
   .steps__block {
     margin-top: 0;
     flex-direction: column;
-    gap: 59px;
+    gap: 70px;
   }
 }
 .steps__block-item {
@@ -402,7 +486,7 @@ svg > path:hover {
 }
 @media screen and (max-width: 768px) {
   .steps__block-item:nth-child(1) {
-    padding-top: 60px;
+    padding-top: 70px;
   }
 }
 .steps__block-item-text {
@@ -415,17 +499,28 @@ svg > path:hover {
 }
 
 .spain__block {
-  max-width: 558px;
+  max-width: 550px;
   background-color: rgba(35, 35, 35, 0.9);
   padding: 32px 44px 0 32px;
   height: 372px;
-  padding-top: 60px;
+  padding-top: 45px;
+}
+@media screen and (min-width: 1920px) {
+  .spain__block {
+    max-width: 648px;
+    padding-top: 44px;
+  }
 }
 @media screen and (max-width: 768px) {
   .spain__block {
     max-width: 720px;
     height: 348px;
     padding: 44px 32px 0 32px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .spain__block {
+    height: 375px;
   }
 }
 .spain__block-pretitle {
@@ -446,7 +541,7 @@ svg > path:hover {
   line-height: 28px;
   letter-spacing: 0.1em;
   margin-top: 16px;
-  margin-bottom: 44px;
+  margin-bottom: 40px;
 }
 
 .testimonials__block {
@@ -463,6 +558,12 @@ svg > path:hover {
   height: 308px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (min-width: 1920px) {
+  .testimonials__block-image > img {
+    width: 440px;
+    height: 280px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .testimonials__block-image > img {
@@ -492,6 +593,11 @@ svg > path:hover {
   padding: 48px 60px;
   max-width: 760px;
 }
+@media screen and (min-width: 1920px) {
+  .testimonials__block-text {
+    max-width: 885px;
+  }
+}
 .testimonials__block-text-title {
   font-weight: 400;
   font-size: 20px;
@@ -503,13 +609,6 @@ svg > path:hover {
   letter-spacing: 0.1em;
   margin-top: 16px;
   line-height: 28px;
-}
-
-.header__banner-wrapper {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .mountains-spain {
@@ -527,6 +626,11 @@ svg > path:hover {
   line-height: 28px;
   letter-spacing: 0.1em;
   padding-top: 80px;
+}
+@media screen and (min-width: 1920px) {
+  .footer__block-title {
+    padding-top: 75px;
+  }
 }
 .footer__block-pretitle {
   font-weight: 400;
@@ -587,6 +691,7 @@ svg > path:hover {
 .header__banner-form {
   width: 647px;
   margin: 0 auto;
+  height: 60px;
 }
 @media screen and (max-width: 576px) {
   .header__banner-form {

@@ -8,11 +8,20 @@
     
     &__line {
         position: relative;
-        top: 56px;
-        left: 380px;
+        top: 75px;
+        left: 300px;
         overflow: hidden;
         height: 55px;
+        width: 754px;
+        display: inline-block;
 
+        @media screen and (min-width:$desktop-big){
+            left: 579px;
+            top: 64px;
+        }
+        @media screen and (max-width:1440px){
+            left: 335px;;
+        }
         @media screen and (max-width:$desktop-small){
             left: 126px;
             top: 60px;
@@ -26,13 +35,10 @@
         display: flex;
         justify-content: space-around;
 
-        @media screen and (max-width:$desktop-small){
-            justify-content: space-between;
-        }
         @media screen and (max-width:$tablet-start){
             margin-top: 0;
             flex-direction: column;
-            gap: 59px;
+            gap: 70px;
         }
         
         &-item {
@@ -41,7 +47,7 @@
 
             &:nth-child(1) {
                 @media screen and (max-width:$tablet-start){
-                padding-top: 60px;
+                padding-top: 70px;
                 }
             }
     

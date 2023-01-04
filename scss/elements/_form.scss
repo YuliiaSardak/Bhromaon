@@ -1,6 +1,7 @@
 .header__banner-form {
     width: 647px;
     margin:  0 auto;
+    height: 60px;
 
     @media screen and (max-width:$mobile) {
         width: 540px;
