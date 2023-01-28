@@ -80,6 +80,7 @@
 
         &-house {
             width: 350px;
+            height: 220px;
             
             @media screen and (min-width:$desktop-big){
                 width: 350px;
@@ -93,6 +94,8 @@
         
         &-mountains {
             margin-left: auto;
+            width: 350px;
+            height: 220px;
             
             @media screen and (min-width:$desktop-big){
                 width: 350px;
