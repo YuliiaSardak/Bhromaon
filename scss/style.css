@@ -398,6 +398,7 @@ svg > path:hover {
 }
 .benefits__block-images-house {
   width: 350px;
+  height: 220px;
 }
 @media screen and (min-width: 1920px) {
   .benefits__block-images-house {
@@ -413,6 +414,8 @@ svg > path:hover {
 }
 .benefits__block-images-mountains {
   margin-left: auto;
+  width: 350px;
+  height: 220px;
 }
 @media screen and (min-width: 1920px) {
   .benefits__block-images-mountains {
@@ -437,45 +440,14 @@ svg > path:hover {
     height: 658px;
   }
 }
-.steps__line {
-  position: relative;
-  top: 75px;
-  left: 300px;
-  overflow: hidden;
-  height: 55px;
-  width: 754px;
-  display: inline-block;
-}
-@media screen and (min-width: 1920px) {
-  .steps__line {
-    left: 579px;
-    top: 64px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .steps__line {
-    left: 335px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .steps__line {
-    left: 126px;
-    top: 60px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .steps__line {
-    display: none;
-  }
-}
 .steps__block {
-  margin-top: 70px;
+  padding-top: 70px;
   display: flex;
   justify-content: space-around;
 }
 @media screen and (max-width: 768px) {
   .steps__block {
-    margin-top: 0;
+    padding-top: 0;
     flex-direction: column;
     gap: 70px;
   }
@@ -714,14 +686,6 @@ svg > path:hover {
   line-height: 20px;
   letter-spacing: 0.2em;
 }
-.header__banner-form-input:-ms-input-placeholder {
-  font-weight: 400;
-  font-family: "Josefin Sans", sans-serif;
-  color: #999999;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.2em;
-}
 .header__banner-form-input::placeholder {
   font-weight: 400;
   font-family: "Josefin Sans", sans-serif;
@@ -759,7 +723,6 @@ svg > path:hover {
 .menu__btn {
   display: flex;
   align-items: center;
-  position: -webkit-sticky;
   position: sticky;
   top: 20px;
   left: 20px;
@@ -791,7 +754,6 @@ svg > path:hover {
 
 .menu__box {
   display: block;
-  position: -webkit-sticky;
   position: sticky;
   display: none;
   top: 0;
