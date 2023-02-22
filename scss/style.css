@@ -529,7 +529,7 @@ svg > path:hover {
   width: 380px;
   height: 308px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media screen and (min-width: 1920px) {
   .testimonials__block-image > img {
@@ -540,7 +540,7 @@ svg > path:hover {
 @media screen and (max-width: 1024px) {
   .testimonials__block-image > img {
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     width: 320px;
     height: 336px;
   }
@@ -548,7 +548,7 @@ svg > path:hover {
 @media screen and (max-width: 768px) {
   .testimonials__block-image > img {
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     width: 720px;
     height: 336px;
     display: block;
