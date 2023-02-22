@@ -1,4 +1,6 @@
 .benefits__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 121px;
 
@@ -9,7 +11,10 @@
         gap: 16px;
 
     @media screen and (max-width:$tablet-start){
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
         gap: 32px;
         }
     @media screen and (max-width:$mobile) {
@@ -59,8 +64,13 @@
     }
     &-images {
         margin-top: 124px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 16px;
         width: 461px;
 
@@ -69,7 +79,10 @@
         }
 
         @media screen and (max-width:$tablet-start){
-            flex-direction: row;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
             margin-top: 60px;
             gap: 20px;
 

@@ -8,12 +8,18 @@
 
     &__block {
         padding-top: 70px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
 
         @media screen and (max-width:$tablet-start){
             padding-top: 0;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             gap: 70px;
         }
         
@@ -38,4 +44,3 @@
         }
     }
 }
-

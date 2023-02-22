@@ -1,27 +1,35 @@
 .testimonials__block {
     margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     @media screen and (max-width:$tablet-start){
-       flex-direction: column;       
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+           -ms-flex-direction: column;
+               flex-direction: column;       
     }
 
     &-image > img {
         width: 380px;
         height: 308px;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
 
         @media screen and (min-width:$desktop-big){
             width: 440px;
             height: 280px;
         }
         @media screen and (max-width:$desktop-small){
-            object-fit: cover;
+            -o-object-fit: cover;
+               object-fit: cover;
             width: 320px;
             height: 336px;
         }
         @media screen and (max-width:$tablet-start){
-            object-fit: cover;
+            -o-object-fit: cover;
+               object-fit: cover;
             width: 720px;
             height: 336px;
             display: block;
